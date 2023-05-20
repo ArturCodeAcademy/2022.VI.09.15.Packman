@@ -16,11 +16,12 @@ public class PackmanController : MonoBehaviour
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
+		_rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
+        _lastDirection = Vector3.zero;
         _lastDirection.x = Input.GetAxis("Horizontal");
         _lastDirection.y = Input.GetAxis("Vertical");
 
