@@ -40,8 +40,6 @@ public class PackmanController : MonoBehaviour
             _lastRotation = newRot;
             transform.rotation = _lastRotation;
         }
-
-        Debug.Log(_lastDirection);
     }
 
     private void FixedUpdate()
